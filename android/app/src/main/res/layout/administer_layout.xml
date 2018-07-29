@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/idTl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="10dp"
+            android:hint="Child ID"
+            android:id="@+id/unique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:layout_below="@id/idTl"
+        android:id="@+id/ageRange"
+        android:hint="Age Range"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_floatingLabel="normal"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/ageRange"
+        android:orientation="vertical"
+        android:id="@+id/range1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="HBV 1 (Hepatitis B Vaccine)"
+            android:id="@+id/oneFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/oneFirst"
+            android:text="OPV 0 (Oral Polio Vaccine)"
+            android:id="@+id/oneSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_below="@id/range1"
+        android:orientation="vertical"
+        android:id="@+id/range2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="OPV 1"
+            android:id="@+id/twoFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/oneFirst"
+            android:text=" Pentavalent 1"
+            android:id="@+id/twoSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/submitBtn"
+        android:background="@color/blue"
+        android:textColor="@color/colorWhite"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

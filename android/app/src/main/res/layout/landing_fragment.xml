@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/trial"
+    android:orientation="vertical"
+    android:alpha="0.9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="CIMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="Central Immunization Management System"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:inputType="phone"
+            android:hint="Enter Mother's Number"
+            android:textColorHint="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/parentPhone"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/checkBtn"
+            android:background="@drawable/log_in_background"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:text="CHECK "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
